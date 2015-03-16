@@ -1,4 +1,5 @@
 #include "ofApp.h"
+#include "SpaceFillers.h"
 
 using namespace ofxCv;
 using namespace cv;
@@ -6,6 +7,8 @@ using namespace cv;
 void ofApp::setup() {
     cam.initGrabber(640, 480);
     gray.allocate(640, 480, OF_IMAGE_GRAYSCALE);
+    
+    hilbert(4);
 }
 
 void ofApp::update() {
