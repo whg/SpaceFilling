@@ -37,6 +37,7 @@
 		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
 		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
 		EBCDE831EFAE08274E799C97 /* Calibration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 402C8F4015542356D362AC88 /* Calibration.cpp */; };
+		EE742E261AB710EF00B59A3F /* Plotter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE742E251AB710EF00B59A3F /* Plotter.cpp */; };
 		F76B4A79BD8DE4854141CB47 /* fdog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2D8249D46647E3C51769CDE /* fdog.cpp */; };
 /* End PBXBuildFile section */
 
@@ -195,8 +196,12 @@
 		E8AF1E9150AD818FA9D9195D /* version.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = version.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/version.hpp; sourceTree = SOURCE_ROOT; };
 		E90542C149C83316678AB011 /* cxmisc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cxmisc.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv/cxmisc.h; sourceTree = SOURCE_ROOT; };
 		ECC34C470C60F0A2AE2761B1 /* random.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = random.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/random.h; sourceTree = SOURCE_ROOT; };
+		EE742E251AB710EF00B59A3F /* Plotter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Plotter.cpp; sourceTree = "<group>"; };
 		EEECBF9E1AB6E4C600578C76 /* LSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSystem.h; sourceTree = "<group>"; };
 		EEECBF9F1AB6E5F800578C76 /* SpaceFillers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceFillers.h; sourceTree = "<group>"; };
+		EEECBFA01AB6F47B00578C76 /* Communication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Communication.cpp; sourceTree = "<group>"; };
+		EEECBFA11AB6F47B00578C76 /* Communication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Communication.h; sourceTree = "<group>"; };
+		EEECBFA31AB7089800578C76 /* Plotter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plotter.h; sourceTree = "<group>"; };
 		F070AF5E3926EB2CB7A15D1B /* params.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = params.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/params.h; sourceTree = SOURCE_ROOT; };
 		F886EBA3F8F05C7F74633933 /* devmem2d.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = devmem2d.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/devmem2d.hpp; sourceTree = SOURCE_ROOT; };
 		F9EC3DDC0E9F85C34B21C760 /* object_factory.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = object_factory.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/object_factory.h; sourceTree = SOURCE_ROOT; };
@@ -621,6 +626,10 @@
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				EEECBF9E1AB6E4C600578C76 /* LSystem.h */,
 				EEECBF9F1AB6E5F800578C76 /* SpaceFillers.h */,
+				EEECBFA01AB6F47B00578C76 /* Communication.cpp */,
+				EEECBFA11AB6F47B00578C76 /* Communication.h */,
+				EEECBFA31AB7089800578C76 /* Plotter.h */,
+				EE742E251AB710EF00B59A3F /* Plotter.cpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -742,6 +751,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				EE742E261AB710EF00B59A3F /* Plotter.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				B6840996567E78436F7ECFAB /* ETF.cpp in Sources */,
 				F76B4A79BD8DE4854141CB47 /* fdog.cpp in Sources */,

@@ -2,13 +2,27 @@
 
 #include "ofMain.h"
 #include "ofxCv.h"
+#include "Plotter.h"
 
 class ofApp : public ofBaseApp {
 public:
     void setup();
     void update();
     void draw();
+    void keyPressed(int key);
     
-    ofVideoGrabber cam;
-    ofImage gray;
+    void processImg();
+    void processPoints();
+    
+    void pathsFromImgAndPnts(ofImage &img, const vector<ofVec2f> &pts);
+    
+    void displayPlotting();
+    
+    ofImage srcImg, dstImg;
+    
+    vector<ofVec2f> pts;
+    int c = 0, n = 1;
+    PlotterPaths paths;
+    
+    Plotter plotter;
 };
