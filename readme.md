@@ -18,7 +18,7 @@ The parameters are at the top of `ofApp.cpp` (bad habit) and there are a few in 
 
 I got all my L-system rules from here:
 
-(http://www-user.uni-bremen.de/~schmuhl/fractals/fractal_curves.html)[http://www-user.uni-bremen.de/~schmuhl/fractals/fractal_curves.html]
+[http://www-user.uni-bremen.de/~schmuhl/fractals/fractal_curves.html](http://www-user.uni-bremen.de/~schmuhl/fractals/fractal_curves.html)
 
 
 ### Addons
