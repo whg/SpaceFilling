@@ -58,7 +58,7 @@ std::vector<ofVec2f> quadradticGosper(int n) {
     LSystem ls;
     ls.addRule(Rule('X', "XFX-YF-YF+FX+FX-YF-YFFX+YF+FXFXYF-FX+YF+FXFX+YF-FXYF-YF-FX+FX+YFYF-"));
     ls.addRule(Rule('Y', "+FXFX-YF-YF+FX+FXYF+FX-YFYF-FX-YF+FXYFYF-FX-YFFX+FX+YF-YF-FX+FX+YFY"));
-    string s = ls.apply("-YF", 2);
+    string s = ls.apply("-YF", n);
     
     return points(s);
 }
