@@ -14,6 +14,13 @@ If you happen to have an HPGL plotter hanging around, you should be able to use 
 
 The parameters are at the top of `ofApp.cpp` (bad habit) and there are a few in `Plotter.cpp` that you might want tune for the size of the drawing.
 
+## Thanks
+
+I got all my L-system rules from here:
+
+(http://www-user.uni-bremen.de/~schmuhl/fractals/fractal_curves.html)[http://www-user.uni-bremen.de/~schmuhl/fractals/fractal_curves.html]
+
+
 ### Addons
 
 You will need ofxCv and ofxPosterize
