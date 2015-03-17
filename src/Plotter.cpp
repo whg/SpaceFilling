@@ -19,7 +19,6 @@ Plotter::Plotter() {
     
     //just for good measure...
     serial.flush(true, true);
-    
 }
 
 bool Plotter::checkSendMore() {
@@ -35,13 +34,7 @@ bool Plotter::checkSendMore() {
         if (serial.available() == 5) {
             unsigned char readBytes[5];
             serial.readBytes(readBytes, 5);
-//            cout << "serial in = ";
-            for (int j = 0; j < 5; j++) {
-//                cout << readBytes[j] << " ";
-            }
-//            cout << endl;
-//            cout << (((int)readBytes[0])*10 + ((int)readBytes[1])) << endl;
-//            cout << atoi((char*) readBytes) << endl;
+
             int space = atoi((char*) readBytes);
             return space > 1300;
         }
@@ -70,15 +63,16 @@ void Plotter::update() {
                 serial.writeBytes((unsigned char*) comm, strlen(comm));
                 
                 counter++;
-                
-                printf("%sent: s\n", comm);
+                percentDone = float(counter) / instructions.size() * 100.0;
+//                printf("%sent: s\n", comm);
             }
             
             if (counter == instructions.size()) {
-                printf("sent stop\n");
-                printf("point size = %i", (int) instructions.size());
+//                printf("sent stop\n");
+//                printf("point size = %i", (int) instructions.size());
                 finished = true;
                 counter = 0;
+                break;
             }
         }
         
@@ -92,6 +86,7 @@ void Plotter::update() {
 void Plotter::plotPaths(const PlotterPaths &paths) {
     instructions.clear();
     stringstream ss;
+    float maxy;
     
     for(auto it = paths.begin(); it != paths.end(); ++it) {
         
@@ -108,13 +103,30 @@ void Plotter::plotPaths(const PlotterPaths &paths) {
             p+= offset;
             p.y = 10320 - p.y;
             instructions.push_back(p.str());
+
+            maxy = MAX(p.y, maxy);
         }
     }
     
     ss.str("");
-    ss << "PU0,0;";
+//    ss << "PU0,0;";
     instructions.push_back(ss.str());
     
+    cout << "starting plot" << endl;
     this->finished = false;
 
+
+    // write everything to a file too
+    ofstream outfile;
+    outfile.open(ofToDataPath("output.hpgl").c_str());
+    
+
+    for (auto it = instructions.begin(); it != instructions.end(); it++) {
+        outfile << *it;
+    }
+
+    outfile.close();
+    cout << "wrote file" << endl;
+    
+//    ofExit();
 }

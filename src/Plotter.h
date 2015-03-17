@@ -41,6 +41,7 @@ public:
     bool finished;
     ofVec2f offset;
     float scale;
+    float percentDone;
     
     Plotter();
     
