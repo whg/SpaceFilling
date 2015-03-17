@@ -48,6 +48,9 @@ void ofApp::processImg() {
 //    equalizeHist(dstImg);
     dstImg.update();
     
+    // make it look blocky!
+    postImg.getTextureReference().setTextureMinMagFilter(GL_NEAREST, GL_NEAREST);;
+
 }
 
 void ofApp::processPoints() {
