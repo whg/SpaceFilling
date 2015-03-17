@@ -196,10 +196,8 @@
 		E8AF1E9150AD818FA9D9195D /* version.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = version.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/version.hpp; sourceTree = SOURCE_ROOT; };
 		E90542C149C83316678AB011 /* cxmisc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = cxmisc.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv/cxmisc.h; sourceTree = SOURCE_ROOT; };
 		ECC34C470C60F0A2AE2761B1 /* random.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = random.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/random.h; sourceTree = SOURCE_ROOT; };
+		EE1EF74F1AB8D29B005DCF7F /* ofxPosterize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxPosterize.h; sourceTree = "<group>"; };
 		EE742E251AB710EF00B59A3F /* Plotter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Plotter.cpp; sourceTree = "<group>"; };
-		EE742E291AB72D3800B59A3F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		EE742E5C1AB72D3800B59A3F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		EE742E5E1AB72D3900B59A3F /* ofxPosterize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxPosterize.h; sourceTree = "<group>"; };
 		EEECBF9E1AB6E4C600578C76 /* LSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSystem.h; sourceTree = "<group>"; };
 		EEECBF9F1AB6E5F800578C76 /* SpaceFillers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceFillers.h; sourceTree = "<group>"; };
 		EEECBFA31AB7089800578C76 /* Plotter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plotter.h; sourceTree = "<group>"; };
@@ -520,7 +518,6 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
-				EE742E281AB72D3800B59A3F /* ofxPosterize */,
 				6025FAF6414C2CA589764D26 /* ofxCv */,
 			);
 			name = addons;
@@ -630,6 +627,7 @@
 				EEECBF9F1AB6E5F800578C76 /* SpaceFillers.h */,
 				EEECBFA31AB7089800578C76 /* Plotter.h */,
 				EE742E251AB710EF00B59A3F /* Plotter.cpp */,
+				EE1EF74F1AB8D29B005DCF7F /* ofxPosterize.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -641,25 +639,6 @@
 				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
 			);
 			name = openFrameworks;
-			sourceTree = "<group>";
-		};
-		EE742E281AB72D3800B59A3F /* ofxPosterize */ = {
-			isa = PBXGroup;
-			children = (
-				EE742E291AB72D3800B59A3F /* .gitignore */,
-				EE742E5C1AB72D3800B59A3F /* README.md */,
-				EE742E5D1AB72D3900B59A3F /* src */,
-			);
-			name = ofxPosterize;
-			path = ../../../addons/ofxPosterize;
-			sourceTree = "<group>";
-		};
-		EE742E5D1AB72D3900B59A3F /* src */ = {
-			isa = PBXGroup;
-			children = (
-				EE742E5E1AB72D3900B59A3F /* ofxPosterize.h */,
-			);
-			path = src;
 			sourceTree = "<group>";
 		};
 		F9F05170CB9BDF47DA2B6E6A /* include */ = {
