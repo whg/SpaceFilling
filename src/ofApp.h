@@ -16,9 +16,9 @@ public:
     
     void pathsFromImgAndPnts(ofImage &img, const vector<ofVec2f> &pts);
     
-    void displayPlotting();
+    void displayPlotting(float toSize);
     
-    ofImage srcImg, dstImg;
+    ofImage srcImg, dstImg, postImg;
     
     vector<ofVec2f> pts;
     int c = 0, n = 1;
